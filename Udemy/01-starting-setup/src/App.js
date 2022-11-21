@@ -1,4 +1,4 @@
-import Expenses from "./Components/Expenses";
+import Expenses from "./Components/Expenses/Expenses";
 
 function App() {
   //Array Off expense object(key value pair)
