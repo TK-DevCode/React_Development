@@ -20,6 +20,7 @@ function ExpenseItem(props) {
       <button onClick={clickHandler()}>Change title</button>
     </Card>
   );
+  
 }
 
 export default ExpenseItem;
