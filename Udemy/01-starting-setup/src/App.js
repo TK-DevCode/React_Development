@@ -1,6 +1,7 @@
 import Expenses from "./Components/Expenses/Expenses";
-
+import NewExpense from "./Components/NewExpense/NewExpense";
 function App() {
+
   //Array Off expense object(key value pair)
   const expenses = [
     {
@@ -25,9 +26,15 @@ function App() {
     },
   ];
 
+  function addEventHandler(expense){
+    console.log("In App.js");
+    console.log(expense);
+
+  };
+
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense onAddExpense = {addEventHandler}/>
       <Expenses
         expense_array={expenses}/>      
     </div>
