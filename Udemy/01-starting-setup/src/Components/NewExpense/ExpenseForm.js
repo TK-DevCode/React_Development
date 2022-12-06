@@ -39,7 +39,7 @@ function ExpenseForm(props) {
       amount: enteredAmount,
       date: new Date(enteredDate), // Construct a new date , this will pharse the date string into Date() to create a new Date object
     };
-    
+    //When the Add Expense button is pressed the submit Handler is triggered and the expense data gets build and passed to NewExpense
     props.onSaveExpenseData(expenseData);
     setEnteredTitle("");
     setEnteredAmount("");

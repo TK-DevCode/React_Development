@@ -8,7 +8,9 @@ function NewExpense(props){
             ...enteredExpenseData, // Remember that the ... is copying everything in enteredExpenseData and add one more element
             id: Math.random().toString()
         };
-        props.onAddExpense(expenseData);
+        console.log(expenseData.id);
+        //New Expense build up the expense based on the user input and add a id the gets passed below
+        props.onAddExpense(expenseData); // The new created expense is now passed to the App,js throught the onAddExpense props
     };    
 
     return <div className="new-expense">
