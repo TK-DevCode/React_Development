@@ -5,7 +5,7 @@ function ExpensesList(props) {
   if (props.expenseItem.length === 0) {
     return (
       <h2 className="expenses-list__fallback">
-        No Expenses found for this selected year
+        No Expenses found for this year
       </h2>
     );
   }
