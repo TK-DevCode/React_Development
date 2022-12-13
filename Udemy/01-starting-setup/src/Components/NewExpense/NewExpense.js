@@ -11,11 +11,12 @@ function NewExpense(props){
         console.log(expenseData.id);
         //New Expense build up the expense based on the user input and add a id the gets passed below
         props.onAddExpense(expenseData); // The new created expense is now passed to the App,js throught the onAddExpense props
-    };    
+    };   
 
     return <div className="new-expense">
-        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
-    </div>
+        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} /> 
+        </div>
+        
 }
 
 export default NewExpense;

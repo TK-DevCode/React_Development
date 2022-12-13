@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import { flushSync } from "react-dom";
 import Expenses from "./Components/Expenses/Expenses";
 import NewExpense from "./Components/NewExpense/NewExpense";
 

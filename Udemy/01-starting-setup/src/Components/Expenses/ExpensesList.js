@@ -8,7 +8,7 @@ function ExpensesList(props) {
         No Expenses found for this year
       </h2>
     );
-  }
+  };
 
   return (
     <ul className="expenses-list">
