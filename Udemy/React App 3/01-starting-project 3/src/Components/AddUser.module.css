@@ -1,0 +1,51 @@
+.container{
+    background-color: rgba(245, 245, 245, 0.749);
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(28, 184, 241, 0.800);
+}
+
+.title{
+    font-size: large;
+    color:  rgb(27, 194, 255 );
+    font-family: Helvetica;
+    margin-left: 10px;           
+}
+
+input{
+    border-radius: 5px;
+    width: 70%;
+    height: 30px;
+    margin-left: 20px;
+    padding: 15px;
+    border-width: 1px;
+    margin-bottom: 10px;        
+}
+
+.addUserButton{
+    background-color: rgb(27, 194, 255);
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    box-shadow: 0 1px 5px rgb(75, 75, 75, 0.800);
+    border-color: rgb(75, 75, 75, 0.800);
+    border-radius: 10px;
+    border-width: 1px;
+    align-content: right;
+
+}
+.addUserButton:hover{
+    background-color: aliceblue;
+    color: rgb(27, 194, 255);
+    font-weight: bold;
+}
+
+.newUser__action {
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 10px;
+
+  }
