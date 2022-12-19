@@ -1,34 +1,38 @@
 import React, { useState } from "react";
-import styles from "./AddUser.module.css";
+import styles from "./AddUserForm.module.css";
 
-function AddUser() {
+
+function AddUserForm(props) {
+
   const [NameEntered, UserNameEntered] = useState("");
   const [AgeEntered, UserAgeEntered] = useState(0);
 
-  const newUser={
+  const newUser = {
     Name: NameEntered,
     Age: AgeEntered,
-    Key: Math.random() // Each elemnt should have a unique ID key
+    Key: Math.random(), // Each element should have a unique ID key
   };
 
-  function UserName(event) {
+  // Event Handlers
+  function UserNameHandler(event) {
     UserNameEntered(event.target.value);
-  };
+  }
 
-  function UserAge(event) {
+  function UserAgeHandler(event) {
     UserAgeEntered(event.target.value);
-  };
+  }
 
   function submitHandler(event) {
-    event.preventDefault(); // By default a button placed inside a form will act as a submit button and reload the browser
+    event.preventDefault();
+    // By default a button placed inside a form will act as a submit button and reload the browser
     // By page will reload because of a request being sent to the sever to submit the form
     // But we don't want that, we want to control the submit with JavaScript
     newUser.Name = NameEntered;
     newUser.Age = AgeEntered;
-    console.log(newUser);
+    props.onAddUserData(newUser);
     UserNameEntered("");
     UserAgeEntered(0);
-  }; 
+  }
 
   return (
     <div className={styles.container}>
@@ -41,7 +45,7 @@ function AddUser() {
             type="text"
             placeholder="Please input new user's Name"
             value={NameEntered}
-            onChange={UserName}
+            onChange={UserNameHandler}
           ></input>
         </div>
         <label>
@@ -54,7 +58,7 @@ function AddUser() {
             value={AgeEntered}
             min="0"
             step="1"
-            onChange={UserAge}
+            onChange={UserAgeHandler}
           ></input>
         </div>
         <div className={styles.newUser__action}>
@@ -67,4 +71,4 @@ function AddUser() {
   );
 }
 
-export default AddUser;
+export default AddUserForm;

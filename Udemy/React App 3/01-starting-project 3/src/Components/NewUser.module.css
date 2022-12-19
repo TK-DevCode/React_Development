@@ -1,0 +1,15 @@
+.userEntry{
+    background-color: rgb(27, 194, 255);
+    width: auto;
+    height: auto;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+    color: rgb(75, 75, 75);
+    box-shadow: 0 1px 5px rgb(75, 75, 75, 0.800);
+    border-color: rgb(75, 75, 75, 0.800);
+    border-radius: 10px;
+    border-width: 1px;
+    
+
+}
