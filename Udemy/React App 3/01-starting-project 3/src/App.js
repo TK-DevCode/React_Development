@@ -31,8 +31,7 @@ function App() {
   return (
     <div>
       <AddUserForm onAddUserData={addUserDataHandler} />
-      <UserList users={newAddedUser} />
-      
+      <UserList users={newAddedUser} />      
     </div>
   );
 }

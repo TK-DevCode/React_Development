@@ -1,0 +1,75 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 80%;
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgba(245, 245, 245, 0.75);
+    border-radius: 10px;
+    box-shadow: 0 1px 18px rgba(28, 184, 241, 0.800);
+    
+  }
+  .p{
+    color: rgb(75, 75, 75);
+  }
+  .header {
+    background: rgb(75, 75, 75);
+    padding: 1rem;
+  }
+  
+  .header h2 {
+    margin: 0;
+    color:  rgb(27, 194, 255);
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  @media (min-width: 768px) {
+    .modal {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }
+
+  .confirmErrorButton{
+    background-color: rgb(27, 194, 255);
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    color: rgb(75, 75, 75);
+    box-shadow: 0 1px 5px rgb(75, 75, 75, 0.800);
+    border-color: rgb(75, 75, 75, 0.800);
+    border-radius: 10px;
+    border-width: 0px;
+    font-weight: bold;
+
+}
+.confirmErrorButton:hover{
+    background-color: aliceblue;
+    color: rgb(27, 194, 255);
+    font-weight: bold;
+}
+.newUser__action {
+  text-align: right;
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
